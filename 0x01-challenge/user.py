@@ -10,7 +10,6 @@ class User():
         """ Documentation """
         self.__email = None
 
-    @email.setter
     def email(self, value):
         """ Documentation """
         if type(value) is not str:
