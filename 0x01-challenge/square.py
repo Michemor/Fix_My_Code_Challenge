@@ -1,13 +1,22 @@
 #!/usr/bin/python3
+"""
+defines a square and computes area and square
+"""
 
 
 class Square():
-    """ Defines a square """
+    """
+    width (integer): defines the size of the square
+    """
     width = 0
 
     def __init__(self, *args, **kwargs):
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        """ initializes the width values """
+        if args:
+            self_width = args[0] if (len) > 0 else None
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
