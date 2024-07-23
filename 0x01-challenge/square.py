@@ -5,7 +5,6 @@
 class square():
     """ Defines a square """
     width = 0
-    height = 0
 
     def __init__(self, *args, **kwargs):
         """ initializes values for any instance """
